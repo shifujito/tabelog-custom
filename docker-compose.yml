@@ -3,6 +3,7 @@ services:
   app:
     image: tabelog-custom
     build:
+      dockerfile: ./scraping/Dockerfile
       args:
         - target=dev
     volumes:

@@ -4,7 +4,7 @@ FROM golang:1.18.2-bullseye as deploy
 WORKDIR /app
 
 # 開発環境用
-FROM golang;1.18.2 as dev
+FROM golang:1.18.2 as dev
 
 WORKDIR /app
 RUN go install github.com/cosmtrek/air@latest
